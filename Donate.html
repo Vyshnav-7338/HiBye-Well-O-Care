@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to HiBye Well"O"Care</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #0055a5;
+        }
+        h3 {
+            color: #333;
+        }
+        p, li {
+            font-size: 1.1em;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .highlight {
+            color: #0055a5;
+            font-weight: bold;
+        }
+
+        /* Donation Options */
+        .donation-ways {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .donation-option {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+        .donation-option:hover {
+            transform: scale(1.05);
+        }
+
+        /* Donate Button */
+        .donate-btn {
+            display: block;
+            text-align: center;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #0055a5;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .donate-btn:hover {
+            background-color: #003f80;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Counter Animation */
+        .counter {
+            color: #0055a5;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin: 15px 0;
+            opacity: 0;
+        }
+        .counter.visible {
+            opacity: 1;
+            transition: opacity 1s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="fade-in">Support HiBye Well"O"Care</h1>
+    <p class="fade-in">At <span class="highlight">HiBye Well"O"Care</span>, we believe that art, culture, and community have the power to uplift, connect, and inspire. Your support makes it possible for us to offer free or low-cost programs that enhance social well-being, bring people together, and provide essential mental health resources through creative expression.</p>
+
+    <div class="counter" id="impactCounter" data-count="100">0%</div>
+
+    <h2 class="fade-in">Why Donate?</h2>
+    <ul class="fade-in">
+        <li><strong>Empower Local Artists:</strong> Your contributions fund workshops, exhibitions, and performance spaces, creating new opportunities for artists.</li>
+        <li><strong>Promote Mental Health and Well-Being:</strong> Donations allow us to offer music therapy sessions, support groups, and art-based mental health programs.</li>
+        <li><strong>Ensure Accessibility and Inclusion:</strong> Your support enables underserved and marginalized communities to participate in our programs.</li>
+    </ul>
+
+    <h2 class="fade-in">How Your Donation Helps</h2>
+    <p class="fade-in">Every donation, no matter the size, has a meaningful impact on our community. From funding art supplies for workshops to covering costs for mental health support initiatives, <strong>100% of donations</strong> go directly towards our programs and outreach efforts.</p>
+
+    <h2 class="fade-in">Ways to Donate</h2>
+    <div class="donation-ways">
+        <div class="donation-option fade-in">
+            <h3>One-Time Donation</h3>
+            <p>Support us with a one-time gift of any amount. Your contribution makes an immediate impact!</p>
+        </div>
+        <div class="donation-option fade-in">
+            <h3>Monthly Supporter</h3>
+            <p>Become a sustaining supporter with monthly contributions, helping us grow and support more people.</p>
+        </div>
+        <div class="donation-option fade-in">
+            <h3>Sponsor an Event or Program</h3>
+            <p>Partner with us to fund specific workshops, events, or mental health initiatives that align with your values.</p>
+        </div>
+    </div>
+
+    <a href="#" class="donate-btn fade-in">Donate Now</a>
+
+    <p class="fade-in">Thank you for supporting a community that values art, culture, and emotional well-being for all.</p>
+</div>
+
+<script>
+    // Scroll Animation
+    const fadeIns = document.querySelectorAll('.fade-in');
+    const counters = document.querySelectorAll('.counter');
+    
+    function revealElements() {
+        fadeIns.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    }
+
+    // Counter Animation
+    function animateCounters() {
+        counters.forEach((counter) => {
+            const rect = counter.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    const speed = target / 100;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + speed);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target + "%";
+                    }
+                };
+                updateCount();
+                counter.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', () => {
+        revealElements();
+        animateCounters();
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        revealElements();
+        animateCounters();
+    });
+</script>
+
+</body>
+</html>

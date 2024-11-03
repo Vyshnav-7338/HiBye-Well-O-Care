@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> HiBye Well”O”Care</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0"> HiBye
+                        <span class="text-dark"> Well”O”Care</span>
+                    </h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="event.html" class="nav-item nav-link">Events</a>
+                        <a href="menu.html" class="nav-item nav-link">Donation</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="book.html" class="dropdown-item">Booking</a>
+                                <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
+                        data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-light py-6 my-6 mt-0">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <small
+                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome
+                        to HiBye Well”O”Care</small>
+                    <h1 style="font-size: 50px;" class="display-1 mb-4 animated bounceInDown">HiBye <span
+                            class="text-primary"> Well”O”Care</span>Connecting Communities Through Art, Culture, and
+                        Wellbeing</h1>
+                    <a href=""
+                        class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book
+                        Now</a>
+                    <a href=""
+                        class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know
+                        More</a>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <img src="img/hero.png" class="img-fluid rounded animated zoomIn" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Satrt -->
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <img src="img/about.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border rounded-pill px-4 py-1 mb-3">About Us</small>
+                    <p style="color: #434343;" class="mb-4">HiBye Well”O”Care is a dedicated platform that fosters social cohesion, community building, and emotional wellbeing through the power of art, culture, and entertainment. We believe in the transformative impact of creative expression and strive to create a vibrant and inclusive community for all.</p>
+    
+                    <a href="" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a>
+                </div>
+            </div>
+            
+            <div class="row g-4 text-dark mb-5 py-4">
+                <div class="col-sm-12">
+                    <i class="fas fa-share text-primary me-2">Our Vision</i>
+                    <p>To be a leading force in fostering artistic expression, enhancing social wellbeing, and uniting communities, creating a vibrant and inclusive space where everyone feels valued and connected.</p>
+                </div>
+    
+                <div class="col-sm-12">
+                    <i class="fas fa-share text-primary me-2">Our Mission</i>
+                    <ul>
+                        <li><span style="font-weight: bold;" class="text-primary">Empowering Creativity:</span> We provide a stage for diverse artistic expressions, offering a wide range of programs, workshops, and events that cater to various age groups and interests.</li>
+                        <li><span style="font-weight: bold;" class="text-primary">Building Community:</span> We foster a sense of belonging and connection by creating safe, inclusive, and welcoming spaces for relaxation, stress reduction, and overall mental health.</li>
+                        <li><span style="font-weight: bold;" class="text-primary">Supporting Local Talent:</span> We champion local artists, performers, and creatives by providing opportunities for professional development, community engagement, and collaboration.</li>
+                        <li><span style="font-weight: bold;" class="text-primary">Promoting Social Inclusion:</span> We ensure access to entertainment and leisure activities for underserved and marginalized communities, working with other organizations to amplify our impact.</li>
+                        <li><span style="font-weight: bold;" class="text-primary">Prioritizing Mental Health:</span> We offer holistic support through initiatives like music therapy sessions, counseling services, and mental health awareness programs.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row g-4 text-dark mb-5 py-4">
+                <div class="col-sm-12">
+                    <i class="fas fa-share text-primary me-2">Our Objectives</i>
+                    <ul>
+                        <li>To provide a platform for artistic expression and entertainment that promotes social cohesion and community building.</li>
+                        <li>To create a safe and inclusive space for people to relax, unwind, and escape the stresses of everyday life.</li>
+                        <li>To offer a diverse range of entertainment programs, workshops, and events that cater to different age groups, interests, and abilities.</li>
+                        <li>To foster a sense of belonging and connection among members and participants, promoting emotional well-being and social support.</li>
+                        <li>To provide access to entertainment and leisure activities for underserved or marginalized communities, promoting social inclusion and equity.</li>
+                        <li>To support local artists, performers, and creatives, providing opportunities for professional development and community engagement.</li>
+                        <li>To create a comfortable and welcoming environment that promotes relaxation, reduces stress, and improves overall mental health and well-being.</li>
+                        <li>To build partnerships and collaborations with other organizations, businesses, and stakeholders to amplify impact and resources.</li>
+                        <li>To provide mental support structures and resources for individuals struggling with mental health issues, such as music therapy sessions, access to counseling services, and support groups for mental health awareness and advocacy.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row g-4 text-dark mb-5 py-4">
+                <div class="col-sm-12">
+                    <h3 class="text-primary">Join Us</h3>
+                    <p>Whether you're an aspiring artist, a passionate enthusiast, or simply seeking a creative outlet, we invite you to become a part of our vibrant community. Together, let's celebrate the power of creativity and make a positive impact on our world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our
+                    EVENTS</small>
+                <h1 class="display-5 mb-5">TYPES OF EVENTS SHALL CONDUCTED</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-theater-masks fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">Art and Culture Workshops</h4>
+                                <p class="mb-4"><b>Visual Arts:</b> Painting, drawing, sculpture, and photography
+                                    workshops for all age
+                                    groups.</p>
+                                <p class="mb-4"><b>Crafts and DIY:</b> : Hands On classes on pottery, textile arts, and
+                                    eco friendly crafts.</p>
+                                <p class="mb-4"><b>Performing Arts:</b> Classes or workshops on dance, theater, and
+                                    music to engage
+                                    participants in active expression.</p>
+
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-music fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">Music and Dance Therapy Sessions</h4>
+                                <p class="mb-4"><b>Music Therapy:</b> Guided sessions using music to help participants
+                                    relax and enhance
+                                    emotional wellbeing.
+                                </p>
+                                <p class="mb-4"><b>Dance Therapy:</b> Movement Based workshops focusing on self
+                                    expression, stress relief,
+                                    and physical wellness.
+                                </p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-pencil-alt fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">Community Art Projects</h4>
+                                <p class="mb-4"><b>Collaborative Mural Painting:</b> Community members create public
+                                    murals, fostering
+                                    teamwork and a sense of shared identity.
+
+                                </p>
+                                <p class="mb-4"><b>PopUp Art Shows:</b> Exhibitions for local artists in community
+                                    spaces, providing visibility
+                                    and appreciation for their work
+
+                                </p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-drum fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">Cultural Festivals and Celebrations</h4>
+                                <p class="mb-4"><b>Local Cultural Days:</b> Events that celebrate local traditions,
+                                    foods, and music.
+
+                                </p>
+                                <p class="mb-4"><b>Seasonal Festivals:</b> Organize events around cultural or seasonal
+                                    themes to bring the
+                                    community together.
+
+                                </p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-spa fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3"> Mental Health Awareness Workshops </h4>
+                                <p class="mb-4"><b>Mindfulness and Meditation:</b> Guided sessions for stress management and relaxation
+
+                                </p>
+                                <p class="mb-4"><b>Mental Health Support Groups:</b> Regularly scheduled group discussions led by mental
+                                    health professionals.
+                                    </p>
+
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-users fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">Youth and Family Programs</h4>
+                                <p class="mb-4"><b>Family Arts Day:</b> Activities that allow families to participate together in creative arts,
+                                    crafts, and performances.
+                                    </p>
+
+                                    <p class="mb-4"><b>Youth Open Mic Nights:</b> Safe spaces for young individuals to express themselves
+                                        through poetry, music, and spoken word.
+                                        </p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-palette fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">SkillBuilding and Professional Development for Artists
+                                </h4>
+                                <p class="mb-4"><b>Portfolio Workshops:</b> Sessions to help artists build and present their portfolios
+                                    </p>
+
+                                    <p class="mb-4"><b>Networking Events:</b> Events that connect local artists with each other and potential
+                                        collaborators or mentors.
+                                        </p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-campground fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">Outdoor and NatureInspired Art Events</h4>
+                                <p class="mb-4"><b>Nature Walk and Sketching:</b> Combining art and the outdoors to inspire creativity and
+                                    relaxation.</p>
+
+                                <p class="mb-4"><b>Photography in Nature: </b> Photography sessions in local parks or scenic areas,
+                                    encouraging participants to capture natural beauty.
+                                    </p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-film fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">Film and Cultural Screening Nights
+                                </h4>
+                                <p class="mb-4"><b>Film Nights:</b> Screening films, documentaries, or short films that promote cultural
+                                    understanding and emotional reflection.</p>
+
+                                <p class="mb-4"><b>Panel Discussions:</b> Post Screening discussions with experts, artists, or community
+                                    leaders to deepen understanding.
+                                    </p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <i class="fas fa-calendar-check fa-7x text-primary mb-4"></i>
+                                <h4 class="mb-3">Collaborative Events with Other Organizations</h4>
+                                <p class="mb-4"><b>Charity Art Auctions:</b> Partner with local businesses to raise funds for community
+                                    programs.
+                                    </p>
+
+                                <p class="mb-4"><b>CrossCultural Workshops:</b> Joint events with other cultural organizations to foster
+                                    mutual understanding.
+                                    </p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Events Start -->
+    
+    <!-- Events End -->
+
+
+    <!-- Menu Start -->
+    <div class="container-fluid menu bg-light py-6 my-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our
+                    PROJECT</small>
+                <!-- <h1 class="display-5 mb-5">Most Popular Food in the World</h1> -->
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
+                    data-wow-delay="0.1s">
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active"
+                            data-bs-toggle="pill" href="#tab-6">
+                            <span class="text-dark" style="width: 150px;">HIBYE Entertainment</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill"
+                            href="#tab-7">
+                            <span class="text-dark" style="width: 150px;">HIBYE EVOs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill"
+                            href="#tab-8">
+                            <span class="text-dark" style="width: 150px;">HIBYE Connecting Bleeds</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill"
+                            href="#tab-9">
+                            <span class="text-dark" style="width: 150px;">HIBYE Well-O-City</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill" data-bs-toggle="pill"
+                            href="#tab-10">
+                            <span class="text-dark" style="width: 150px;">HIBYE Special Moments</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-6" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-12 wow bounceInUp" data-wow-delay="0.1s">
+                                <div class="menu-item d-flex align-items-center">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h2>
+                                            <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="HIBYE Entertainment" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
+                                            HIBYE Entertainment: Connecting People, Creating Joy
+                                        </h2>
+                                        <p>In partnership with HiBye Entertainment, we believe that happiness and connection are vital to building a thriving community. We are excited to present HIBYE Entertainment—a collection of innovative mobile applications designed to unite people based on shared interests, vibes, and mindsets.</p>
+                                        <h3>Our Apps: HIBYE MID & HIBYE ELD</h3>
+                                        <p>HIBYE MID and HIBYE ELD are crafted to help users discover like-minded individuals, fostering genuine relationships and joyful experiences. Whether bonding over common hobbies, exploring new interests, or simply enjoying quality time with others, our apps make connecting effortless and enjoyable.</p>
+                                        <ul>
+                                            <li><strong>HIBYE MID:</strong> Tailored for users looking to connect with friends within their age group, featuring tools that enable sharing, exploration, and engagement with those who share their passions and energy.</li>
+                                            <li><strong>HIBYE ELD:</strong> Designed for individuals wishing to connect with others at a similar life stage, offering opportunities for meaningful conversations, shared activities, and a vibrant social life.</li>
+                                        </ul>
+                                        <p>At HIBYE Entertainment, our goal is to create inclusive spaces where everyone feels welcome and understood, making it easy to find happiness and companionship through shared moments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tab-7" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-12 wow bounceInUp" data-wow-delay="0.1s">
+                                <div class="menu-item d-flex align-items-center">
+                                    
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h2>
+                                            <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="">
+                                            HIBYE EVOs: Innovating Social Connections</h2>
+                                        <p>We are committed to leveraging the latest technologies to enhance community, connection, and understanding. In addition to our social connectivity apps, HIBYE MID and HIBYE ELD, we are excited to introduce our latest venture into immersive technology with HIBYE VR and AR, in collaboration with Endurevo.</p>
+                                        <h3>HIBYE VR and AR: Bringing Immersive Technology to All</h3>
+                                        <p>With our HIBYE VR and AR project, we aim to make cutting-edge virtual reality (VR) and augmented reality (AR) experiences accessible to everyone. Partnering with Endurevo, we’re creating platforms and applications that allow users to explore VR and AR environments, gain hands-on experience with AI, and understand the potential of these transformative technologies.</p>
+                                        <ul>
+                                            <li><strong>Inclusive Access:</strong> Ensuring that VR and AR are not limited to tech experts but are available to all community members, regardless of their experience level.</li>
+                                            <li><strong>Educational Programs:</strong> Offering workshops and interactive sessions where users can learn about AI, VR, and AR in an engaging, hands-on way.</li>
+                                            <li><strong>Enhanced Experiences:</strong> Providing a platform where users can explore virtual worlds, participate in AI-driven simulations, and connect with others in innovative ways.</li>
+                                        </ul>
+                                        <p>Through this project, we aim to bridge the gap between people and technology, offering a unique opportunity for everyone to experience, understand, and benefit from the advancements in AI, VR, and AR.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tab-8" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-12 wow bounceInUp" data-wow-delay="0.1s">
+                                <div class="menu-item d-flex align-items-center">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h2>
+                                    <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="">
+
+                                            HIBYE Community: Building Lasting Connections</h2>
+                                        <p>At HIBYE, we understand that true connection goes beyond just technology. We believe in fostering a community where individuals can share experiences, insights, and support each other on their journeys. Our community initiatives are designed to create a welcoming environment for everyone.</p>
+                                        <h3>Community Initiatives: Connecting Through Shared Experiences</h3>
+                                        <p>Our community initiatives focus on bringing people together through various activities, events, and online platforms. We aim to create spaces where users can engage meaningfully and develop relationships that last.</p>
+                                        <ul>
+                                            <li><strong>Events and Workshops:</strong> Organizing regular events and workshops that encourage participants to learn, collaborate, and connect over common interests.</li>
+                                            <li><strong>Online Forums:</strong> Establishing online forums and discussion groups where users can share ideas, ask questions, and support each other.</li>
+                                            <li><strong>Volunteer Opportunities:</strong> Creating volunteer programs that allow community members to give back, fostering a sense of belonging and shared purpose.</li>
+                                        </ul>
+                                        <p>Through these initiatives, we strive to cultivate a vibrant community where everyone feels valued and empowered to connect, share, and grow together.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tab-9" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-12 wow bounceInUp" data-wow-delay="0.1s">
+                                <div class="menu-item d-flex align-items-center">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h2>
+                                    <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="">
+                                            
+                                            HIBYE Well-O-City: Nature for All</h2>
+                                        <p>With a vision of inclusivity and well-being, HIBYE Well-O-City is designed to make the beauty of nature accessible to everyone. This initiative ensures that individuals from all financial backgrounds can experience the tranquility of natural spaces, connect with nature, and enjoy the restorative benefits of being outdoors.</p>
+                                        <h3>Project Highlights:</h3>
+                                        <ul>
+                                            <li><strong>Access to Nature Parks:</strong> Well-O-City offers entry to beautifully maintained parks and natural spaces, providing a place for people of all ages to explore, relax, and connect with the environment.</li>
+                                            <li><strong>Inclusive Experiences:</strong> Regardless of financial background, everyone is welcome to immerse themselves in nature, learn about local ecology, and feel the rejuvenating energy of the outdoors.</li>
+                                            <li><strong>Promoting Eco-Awareness:</strong> Through interactive sessions, eco-tours, and community gardening, Well-O-City fosters a sense of environmental responsibility and an appreciation for natural resources.</li>
+                                        </ul>
+                                        <p>At HIBYE Well-O-City, we believe that everyone should have the chance to connect with nature, feel the earth beneath their feet, and experience the serenity it brings. This project is about making natural spaces and well-being accessible to all, creating a healthier, more connected community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tab-10" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-12 wow bounceInUp" data-wow-delay="0.1s">
+                                <div class="menu-item d-flex align-items-center">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h2>
+                                    <img class="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="">
+                                            
+                                            HIBYE Special Moments: Celebrating Together, Affordably</h2>
+                                        <p>In keeping with our mission to bring people closer, HIBYE Special Moments is dedicated to helping individuals and families celebrate their loved ones' special days and events without financial stress. This initiative focuses on creating joyful, memorable celebrations that are both bright and budget-friendly.</p>
+                                        <h3>Project Highlights:</h3>
+                                        <ul>
+                                            <li><strong>Affordable Event Planning:</strong> Offering low-cost or free options for event essentials, from venue arrangements to decorations, making it easier to celebrate birthdays, anniversaries, and other milestones.</li>
+                                            <li><strong>Community Spaces for Celebrations:</strong> Access to beautiful community spaces and parks, providing an inviting, natural setting for gatherings without the high costs.</li>
+                                            <li><strong>Special Day Packages:</strong> Creative packages that include low-cost activities, group experiences, and personalized touches to help people celebrate meaningfully without breaking the bank.</li>
+                                            <li><strong>DIY Workshops:</strong> Guiding participants in creating their own decorations, gifts, and more, adding a personal touch to special events while keeping costs low.</li>
+                                        </ul>
+                                        <p>With HIBYE Special Moments, we believe that everyone deserves a vibrant, joyful celebration with loved ones, regardless of budget. By making these events accessible, we bring people together to create unforgettable memories that don’t come at a high price.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu End -->
+
+
+    <!-- Book Us Start -->
+    <div class="container-fluid donation py-6 wow bounceInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-1">
+                    <img src="img/background-site.jpg" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
+                </div>
+                <div class="col-10">
+                    <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+                        <div class="text-center">
+                            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Donation Page</small>
+                            <h1 class="display-5 mb-5">Support HiBye Well-O-Care</h1>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <p>At HiBye Well”O”Care, we believe that art, culture, and community have the power to uplift, connect, and inspire. Your support makes it possible for us to offer free or low-cost programs that enhance social well-being, bring people together, and provide essential mental health resources through creative expression.</p>
+                                <p>By donating, you’re helping to:</p>
+                                <ul>
+                                    <li><strong>Empower Local Artists:</strong> Your contributions fund workshops, exhibitions, and performance spaces for emerging and established artists, creating new opportunities for professional growth.</li>
+                                    <li><strong>Promote Mental Health and Well-Being:</strong> Donations allow us to offer music therapy sessions, support groups, and art-based mental health programs that foster relaxation, reduce stress, and support emotional resilience.</li>
+                                    <li><strong>Ensure Accessibility and Inclusion:</strong> Your support makes it possible for underserved and marginalized communities to participate in our activities, making arts and culture accessible to all.</li>
+                                </ul>
+                                <h3>How Your Donation Helps</h3>
+                                <p>Every donation, no matter the size, has a meaningful impact on our community. From funding art supplies for workshops to covering costs for mental health support initiatives, your generosity fuels our mission.</p>
+                                <p><strong>100% of all donations go directly towards our programs and outreach efforts to ensure we can continue creating inclusive spaces for art, expression, and community.</strong></p>
+                                <h3>Ways to Donate</h3>
+                                <ul>
+                                    <li><strong>One-Time Donation:</strong> Support us with a one-time gift of any amount.</li>
+                                    <li><strong>Monthly Supporter:</strong> Become a sustaining supporter with monthly contributions.</li>
+                                    <li><strong>Sponsor an Event or Program:</strong> Partner with us to fund specific workshops, events, or mental health initiatives.</li>
+                                </ul>
+                                <p>Every contribution brings us closer to a more connected and vibrant community. Together, we’re building a future where everyone has a place to express, connect, and thrive.</p>
+                                <p>Thank you for supporting a community that values art, culture, and emotional well-being for all.</p>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-primary px-5 py-3 rounded-pill">Donate Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <img src="img/background-site.jpg" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Book Us End -->
+
+
+   
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h1 class="text-primary">Cater<span class="text-dark">Serv</span></h1>
+                        <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs
+                            condmentum leo massamollis its estiegittis miristum.</p>
+                        <div class="footer-icon d-flex">
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Special Facilities</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Cheese
+                                Burger</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sandwich</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Panner
+                                Burger</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Special
+                                Sweets</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Contact Us</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                            <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                            <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                            <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Social Gallery</h4>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2"
+                                    alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2"
+                                    alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2"
+                                    alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2"
+                                    alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2"
+                                    alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site
+                            Name</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
+                        class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
